@@ -1,56 +1,33 @@
-var number;
+const numbers =['1','2','3']
+const numbers3=['4','5','6']
+const NewList= numbers.concat(numbers3);
 
-class Pila {
-    constructor() {
-        this.stack = [];
-    }
 
-    push(number) {
-        this.stack.push(number);
-    }
+class Node{
+	contructor (value, prev= null, next= null){
+		this.value= value;
+		this.next= next;
+		this.prev= prev;
+	}
+}
+class EnlaceDoble{
+    contructor (value, prev= null, next= null){
+        this.value= value;
+        this.next= next;
+        this.lenght= 0;
+        }
 
-    pop() {
-        return this.stack.pop();
-    }
-
-    peek() {
-        return this.stack[this.stack.length - 1];
-    }
-
-    size() {
-        return this.stack.length;
-    }
-
-    print() {
-        console.log(this.stack);
-    }
+	append (Node){
+}
+	peek (value, current= this.head){
+}
+	size (current= this.head, acum=1){
+}
+	remove (value, current= this.head){
+}
+	print(){
 }
 
-const number1=(25);
-const number2=(35);
-const number3=(45);
-
-const Pila = new Stack();
-
-Pila.push(number1);
-Pila.push(number2);
-Pila.push(number3);
-
-
-const invertir = () => {
-    while (number1.length>0){
-            dato= number1.pop();
-            number2.push(dato);
-            }
-    while (number2.length>0){
-            number3.push(number2.pop());
-            }
-    while (number3.length>0){
-            number1.push(number3.pop());
-            }
-    while (number1.length){
-        return("Pila Invertida");
-            }
 }
 
-invertir();
+console.log(NewList);
